@@ -10,7 +10,7 @@ public class GVT_programming_test {
     public static void main(String[] args) {
         /**
          * Find the most frequent and its maximum value
-         *
+         * 
          * Example 1
          * arr= [3,3,4,4,4,5,6]
          *
@@ -60,12 +60,18 @@ public class GVT_programming_test {
         // 4. output result
         // Most occurring
 //        System.out.println(mapMax);
+
         String result = "";
         for (Map.Entry<Integer, Integer> entry : mapMax.entrySet()) {
             result += entry.getKey() + "(" + entry.getValue() + "), ";
         }
-        // remove the last ", "
-        result = result.substring(0, result.length() - 2);
+        if (mapMax.size() == 1) {
+            // remove the last "(n), "
+            result = result.substring(0, result.length() - 5);
+        } else {
+            // remove the last ", "
+            result = result.substring(0, result.length() - 2);
+        }
         System.out.println("Most occurring");
         System.out.println(result);
 
