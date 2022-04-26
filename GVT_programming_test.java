@@ -3,11 +3,14 @@ import java.util.*;
 /**
  * Author cho1r
  * 2022/04/26 13:04
- * GVT programming test
+ * GVT programming test:
+ * Find the most frequent and its maximum value
  */
 public class GVT_programming_test {
     public static void main(String[] args) {
         /**
+         * Find the most frequent and its maximum value
+         *
          * Example 1
          * arr= [3,3,4,4,4,5,6]
          *
